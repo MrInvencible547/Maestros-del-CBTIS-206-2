@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Maestros del CBTIS-206.</title>
+</head>
+<body background="img/Clases.jpg">
+	<center>
+		<font size="6" face="courier" color="#110E0C">
+			<h3><b><big>Maestros del CBTIS-206.</big></b></h3>
+			<table bgcolor="white" border="8" bodercolor="black" width="0%">
+				<tr>
+					<th>Maestro.</th>
+				</tr>
+				<tr>
+					<td>
+						<select name="selecciona" size="1" id="varMC" onchange="MC()">
+						<option value="1">Alondra-Zavala.</option>
+						<option value="2">Francisco-Exay.</option>
+						<option value="3">Diana-Lilian.</option>
+						<option value="4">Soto-Nevarez.</option>
+						<option value="5">Maria-Cruz.</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<br><a id="ref1"><img id="img" width="240" height="240" border="black"></a>
+			<p style="color: #110E0C" id="imprimir"></p>
+			<h4><p align="center">Ricardo Antonio Bojorquez Morales.</p></h4>
+
+			<script type="text/javascript">
+				function MC()
+				{
+					var ins = document.getElementById('varMC').value;
+
+					if (parseInt(ins)==1) {
+						document.getElementById("img").src="img/Alondra-Zavala.jpg";
+						document.getElementById("ref1").href="Alondra-Zavala.html";
+						document.getElementById("imprimir").innerHTML="Alondra-Zavala";
+					}
+					if (parseInt(ins)==2) {
+						document.getElementById("img").src="img/Francisco-Exay.jpg";
+						document.getElementById("ref1").href="Francisco-Exay.html";
+						document.getElementById("imprimir").innerHTML="Francisco-Exay";
+					}
+					if (parseInt(ins)==3) {
+						document.getElementById("img").src="img/Diana-Lilian.jpg";
+						document.getElementById("ref1").href="Diana-Lilian.html";
+						document.getElementById("imprimir").innerHTML="Diana-Lilian";
+					}
+					if (parseInt(ins)==4) {
+						document.getElementById("img").src="img/Soto-Nevarez.jpg";
+						document.getElementById("ref1").href="Soto-Nevarez.html";
+						document.getElementById("imprimir").innerHTML="Soto-Nevarez";
+					}
+					if (parseInt(ins)==5) {
+						document.getElementById("img").src="img/Maria-Cruz.jpg";
+						document.getElementById("ref1").href="Maria-Cruz.html";
+						document.getElementById("imprimir").innerHTML="Maria-Cruz";
+					}
+				}
+			</script>
+		</font>
+	</center>
+
+</body>
+</html>
